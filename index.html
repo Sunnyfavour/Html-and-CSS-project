@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html and CSS project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+  
+</style>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="#" class="logo" >Remember<span>That</span></a>
+
+            <img  id="mobile-cta" src="images/menu.svg" alt="open nav" class="mobile-menu">
+
+        
+                <nav class="">
+
+                    <img src="images/exit.svg" alt="close-navigation" id="mobile-exit" class="mobile-menu-exit"  >
+    
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li class="fav" ><a href="#">Feature</a></li>
+                        <li class="fav" ><a href="#">pricing</a></li>
+                    </ul>
+    
+                    <ul class="secondary-nav">
+                        <li class="fav" ><a href="#">contact</a></li>
+                        <li class="go-premium-cta" ><a href="#">Go premium</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
+    </div>
+<!-- hero session -->
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's Nitty &amp; Gritty</p>
+                <h1>A Task App That Does'nt Stink</h1>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Try for free</a>
+                    <a href="#" class="watch-video-cta">
+                        <img src="images/watch.svg" alt="watch a video">watch a video
+                    </a>
+                </div>
+            </div>
+            <img src="images/illustration.svg" class="hero-img"  alt="illustration">
+        </div>
+    </section>
+<!-- features session -->
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list" >
+                <li>Unlimited Task</li>
+                <li>SMS Task Reminder</li>
+                <li>Confetti Explosions upon Task completions</li>
+                <li>Social Media Announcement</li>
+                <li>Real Time Collaboration</li>
+                <li>Other awesome feature</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="man holding phone">
+        </div>
+    </section>
+<!-- testimonial session -->
+    <section class="testimonials-section" >
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+
+                    <blockquote>my name is sunday, this is my first work</blockquote>
+                    <cite>Sunday favour</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+
+                    <blockquote>my name is sunday, this is my first work</blockquote>
+                    <cite>Sunday favour</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="person">
+
+                    <blockquote>my name is sunday, this is my first work</blockquote>
+                    <cite>Sunday favour</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+<!-- contact session -->
+    <section class="contact-section" >
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="your name">
+
+
+                    <label for="message">message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" name="" id="" class="send-message-cta" value="send message" >
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--<script id="rendered-js" >
+        const mobileBtn = document.getElementById('mobile-cta');
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById('mobile-exit');
+        
+        mobileBtn.addEventListener('click', () => {
+          nav.classList.add('menu-btn');
+        });
+        
+        mobileBtnExit.addEventListener('click', () => {
+          nav.classList.remove('menu-btn');
+        });
+        //# sourceURL=pen.js
+            </script>-->
+            <!--<script id="rendered-js">
+                const mobileBtn =document.getElementById('mobile-cta');
+                nav = document.querySelector('nav');
+                mobileBtnExit = document.getElementById('mobile-exit');
+
+                mobileBtn.addEventListener('click',() => {
+                    nav.classList.add('menu-btn');
+                 
+                mobileBtnExit.addEventListener('click',() =>{
+                    nav.classList.remove('menu-btn')
+                })    
+
+
+                })
+
+            </script>-->
+    <script id="rendered-js" >
+        const mobileBtn =document.getElementById('mobile-cta');
+        nav = document.querySelector('nav');
+        mobileBtnExit =document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click',() => {
+          nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () =>  { 
+            nav.classList.remove('menu-btn');
+        })
+           </script>
+</body>
+</html>
